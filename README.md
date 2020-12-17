@@ -7,3 +7,7 @@ The Coo-Coo Calc is a calculator application with a twist. In addition to calcul
 - Storing and recalling previously calculated functions
 - Changing the theme of the Coo-Coo Calc
 - Responsive design that is compatible with multiple devices
+
+### The Wireframe
+
+![alt text](https://github.com/n1ckDotEXE/the-coo-coo-calc/blob/main/Screen%20Shot%202020-12-17%20at%203.22.44%20PM.png?raw=true)
