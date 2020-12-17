@@ -10,4 +10,4 @@ The Coo-Coo Calc is a calculator website with a twist. In addition to calculatin
 
 ### The Wireframe
 
-![alt text]()
+![alt text](https://github.com/n1ckDotEXE/the-coo-coo-calc/blob/main/assets/wireframe.png?raw=true)
