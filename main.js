@@ -1,3 +1,7 @@
+window.onload = function() {
+    localStorage.removeItem("totalNum");
+}
+
 const click0 = document.querySelector("#button0").addEventListener("click", function() {
     activeNum = 0;
     if (activeNum === 0) {
@@ -84,8 +88,9 @@ const click9 = document.querySelector("#button9").addEventListener("click", func
 
 const clickAdd = document.querySelector("#buttonAdd").addEventListener("click", function() {
     total += activeNum;
-    localStorage.setItem("number", total);
-    document.getElementById("#calcScreenText").innerHTML = localStorage.getItem("number");
+
+    localStorage.setItem("totalNum", total);
+    document.getElementById("#calcHistoryText").innerHTML = total;
 });
 const clickSubtract = document.querySelector("#buttonSubtract").addEventListener("click", function() {
     total -= activeNum;
@@ -99,8 +104,6 @@ const clickDivide = document.querySelector("#buttonDivide").addEventListener("cl
     total /= activeNum;
     activeString = activeNum;
 });
-
-
 
 
 const clickEqual = document.querySelector("#buttonEqual").addEventListener("click", function() {
@@ -118,16 +121,3 @@ let total = 0;
 let activeNum = 0;
 let previousNum = 0;
 let activeString = "";
-
-// const calculate = button => {
-//     if (button === ) {
-//         document.querySelector("#calcScreenText").innerHTML = total;
-//     } else if () {
-//         document.querySelector("#calcScreenText").innerHTML = document.querySelector(button).textContent;
-//     } else {
-        
-//     }
-
-    
-
-// }
