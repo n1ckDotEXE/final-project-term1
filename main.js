@@ -123,7 +123,6 @@ const clickDivide = document.querySelector("#buttonDivide").addEventListener("cl
     activeString = activeNum;
 });
 
-
 const clickEqual = document.querySelector("#buttonEqual").addEventListener("click", function() {
     activeNum = total;
     document.querySelector("#calcScreenText").innerHTML = total;
