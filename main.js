@@ -78,26 +78,31 @@ const click9 = document.querySelector("#button9").addEventListener("click", func
         document.querySelector("#calcScreenText").innerHTML = activeString += "9";
     }
 });
+
+
+
+
 const clickAdd = document.querySelector("#buttonAdd").addEventListener("click", function() {
     total += activeNum;
-    activeString = activeNum;
-    document.querySelector("#calcScreenText").innerHTML = activeString += " + ";
+    localStorage.setItem("number", total);
+    document.getElementById("#calcScreenText").innerHTML = localStorage.getItem("number");
 });
 const clickSubtract = document.querySelector("#buttonSubtract").addEventListener("click", function() {
-    total += activeNum;
+    total -= activeNum;
     activeString = activeNum;
-    document.querySelector("#calcScreenText").innerHTML = activeString += " - ";
 });
 const clickMultiply = document.querySelector("#buttonMultiply").addEventListener("click", function() {
-    total += activeNum;
+    total *= activeNum;
     activeString = activeNum;
-    document.querySelector("#calcScreenText").innerHTML = activeString += " * ";
 });
 const clickDivide = document.querySelector("#buttonDivide").addEventListener("click", function() {
-    total += activeNum;
+    total /= activeNum;
     activeString = activeNum;
-    document.querySelector("#calcScreenText").innerHTML = activeString += " / ";
 });
+
+
+
+
 const clickEqual = document.querySelector("#buttonEqual").addEventListener("click", function() {
     activeNum = total;
     document.querySelector("#calcScreenText").innerHTML = total;
