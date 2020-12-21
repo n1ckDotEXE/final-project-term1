@@ -1,6 +1,27 @@
 window.onload = function() {
-    localStorage.removeItem("totalNum");
+    localStorage.setItem("totalNum", 0);
 }
+
+function changeCSS(cssFile, cssLinkIndex) {
+    let oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+    let newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+const purple = document.querySelector("#buttonPurple").addEventListener("click", function() {
+    changeCSS("./themes/purpleStyle.css", 0);
+});
+const green = document.querySelector("#buttonGreen").addEventListener("click", function() {
+    changeCSS("./themes/greenStyle.css", 0);
+});
+const yellow = document.querySelector("#buttonYellow").addEventListener("click", function() {
+    changeCSS("./themes/yellowStyle.css", 0);
+});
+const orange = document.querySelector("#buttonOrange").addEventListener("click", function() {
+    changeCSS("./themes/orangeStyle.css", 0);
+});
 
 const click0 = document.querySelector("#button0").addEventListener("click", function() {
     activeNum = 0;
@@ -109,6 +130,7 @@ const clickEqual = document.querySelector("#buttonEqual").addEventListener("clic
 });
 const clickClear = document.querySelector("#buttonClear").addEventListener("click", function() {
     document.querySelector("#calcScreenText").innerHTML = "0";
+    localStorage.setItem("totalNum", 0);
     activeNum = 0;
     activeString = "";
     total = 0;
