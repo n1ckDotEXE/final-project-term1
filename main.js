@@ -83,14 +83,11 @@ const click9 = document.querySelector("#button9").addEventListener("click", func
     }
 });
 
-
-
-
 const clickAdd = document.querySelector("#buttonAdd").addEventListener("click", function() {
     total += activeNum;
 
     localStorage.setItem("totalNum", total);
-    document.getElementById("#calcHistoryText").innerHTML = total;
+    document.querySelector("#calcHistoryText").innerHTML = "9";
 });
 const clickSubtract = document.querySelector("#buttonSubtract").addEventListener("click", function() {
     total -= activeNum;
