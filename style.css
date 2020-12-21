@@ -21,6 +21,10 @@ html {
     "calcGridMain calcGridText";
 }
 
+/* Note: Fixed min-max ^ 
+- flex order
+*/
+
 #calcScreenText {
     font-size: 50px;
     color: rgb(255, 255, 255);
