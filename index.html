@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>The Coo-Coo Clock</title>
 </head>
 <body>
-    <div id="calc">
+    <!-- Header -->
+    <header id="header">
+        <h1>The Coo-Coo Calc</h1>
+    </header>
+
+    <div class="calc">
+        <div id="calcMain">
+
         <!-- Calculator Screen -->
         <div id="calcScreen">
-
+            <p id="calcScreenText">0</p>
         </div>
 
         <!-- Calculator Buttons -->
-        <div id="calcButtons">
-            <button class="button" id="buttonAdd">+</button>
-            <button class="button" id="buttonSubtract">-</button>
-            <button class="button" id="buttonMultiply">*</button>
-            <button class="button" id="buttonDivide">/</button>
+            <div id="calcButtons">
+                <div id="calcButtons1">
+                    <button class="button" id="buttonAdd">+</button>
+                    <button class="button" id="buttonSubtract">-</button>
+                    <button class="button" id="buttonMultiply">*</button>
+                    <button class="button" id="buttonDivide">/</button>
+                </div>
 
-            <button class="button" id="button7">7</button>
-            <button class="button" id="button8">8</button>
-            <button class="button" id="button9">9</button>
+                <div id="calcButtons2">
+                    <button class="button" id="button7">7</button>
+                    <button class="button" id="button8">8</button>
+                    <button class="button" id="button9">9</button>
+                </div>
 
-            <button class="button" id="button4">4</button>
-            <button class="button" id="button5">5</button>
-            <button class="button" id="button6">6</button>
+                <div id="calcButtons3">
+                    <button class="button" id="button4">4</button>
+                    <button class="button" id="button5">5</button>
+                    <button class="button" id="button6">6</button>
+                </div>
 
-            <button class="button" id="button1">1</button>
-            <button class="button" id="button2">2</button>
-            <button class="button" id="button3">3</button>
+                <div id="calcButtons4">
+                    <button class="button" id="button1">1</button>
+                    <button class="button" id="button2">2</button>
+                    <button class="button" id="button3">3</button>
+                </div>
 
-            <button class="button" id="button0">0</button>
-            <button class="button" id="buttonDecimal">.</button>
-            <button class="button" id="buttonClear">Clear</button>
-            <button class="button" id="buttonEqual">=</button>
+                <div id="calcButtons5">
+                    <button class="button" id="buttonClear">C</button>
+                    <button class="button" id="button0">0</button>
+                    <button class="button" id="buttonDecimal">.</button>
+                </div>
+
+                <div id="calcButtons6">
+                    <button class="button" id="buttonEqual">=</button>
+                </div>
+            </div>
         </div>
+    </div>
+
+        <!-- Calculation History -->
+    <div id="calcHistory">
+        <h1 id="calcHistoryText">HELLO</h1>
     </div>
 </body>
 </html>

@@ -1,0 +1,79 @@
+html {
+    background-color: black;
+} 
+
+#header {
+    font-size: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 255, 255);
+}
+
+#calc {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "calcGridMain calcGridText";
+}
+
+#calcScreenText {
+    font-size: 100%;
+    color: rgb(0, 255, 255);
+    text-align: right;
+}
+
+#calcMain {
+    grid-area: calcGridMain;
+    border: 2px solid rgb(0, 255, 255);
+}
+
+#calcHistory {
+    grid-area: calcGridText;
+    border: 2px solid rgb(0, 255, 255);
+}
+
+#calcHistoryText {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 255);
+    border: none;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.button:hover {
+    background-color: rgb(10, 10, 10);
+    border: 10px;
+    border-color: rgb(0, 255, 255);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.button:active {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 255, 255);
+    outline: none;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    #calcHistory {
+        font-size: small;
+    }
+}
